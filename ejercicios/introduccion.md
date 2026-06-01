@@ -36,7 +36,7 @@ docker --version
  
 ---
  
-## 1Descargar la imagen de MySQL
+## Descargar la imagen de MySQL
  
 Usamos `docker pull` para traer la imagen oficial desde [DockerHub](https://hub.docker.com). Vamos a fijar la versión `8.0` para que a todos nos funcione igual:
  
