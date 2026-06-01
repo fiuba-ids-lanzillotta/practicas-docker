@@ -24,7 +24,7 @@ Antes de empezar necesitás tener Docker instalado. **Qué instalás depende de 
 | **Windows** | **Solo Docker Desktop** | <https://www.docker.com/products/docker-desktop/> |
 | **macOS** | **Solo Docker Desktop** | <https://www.docker.com/products/docker-desktop/> |
  
-> 💡 **¿Engine o Desktop?** *Docker Engine* es el motor que corre los contenedores y se maneja 100% por terminal; está disponible **únicamente en Linux**. *Docker Desktop* es una aplicación con interfaz gráfica que ya incluye el motor adentro, y es la única opción en **Windows** y **macOS**. En **Linux** podés elegir cualquiera de las dos (para esta guía, con cualquiera alcanza).
+> **¿Engine o Desktop?** *Docker Engine* es el motor que corre los contenedores y se maneja 100% por terminal; está disponible **únicamente en Linux**. *Docker Desktop* es una aplicación con interfaz gráfica que ya incluye el motor adentro, y es la única opción en **Windows** y **macOS**. En **Linux** podés elegir cualquiera de las dos (para esta guía, con cualquiera alcanza).
  
 Una vez instalado, abrí una terminal y verificá que funciona:
  
@@ -92,7 +92,7 @@ MySQL tarda unos segundos en inicializarse la primera vez. Si querés ver el pro
 docker logs mysql_fiuba
 ```
  
-> 🔍 Esperá hasta ver en los logs un mensaje similar a **"ready for connections"** antes de pasar al siguiente paso. Si el estado figura como `Restarting` o el contenedor desapareció de `docker ps`, revisá la sección de **Solución de problemas** al final.
+> Esperá hasta ver en los logs un mensaje similar a **"ready for connections"** antes de pasar al siguiente paso. Si el estado figura como `Restarting` o el contenedor desapareció de `docker ps`, revisá la sección de **Solución de problemas** al final.
  
 ---
 
@@ -164,7 +164,7 @@ INSERT INTO alumnos (nombre, padron, aprobado) VALUES
 SELECT * FROM alumnos;
 ```
  
-> ✅ **Checkpoint 5:** El `SELECT` te tiene que devolver una tabla con las dos filas que acabás de insertar.
+> **Checkpoint 5:** El `SELECT` te tiene que devolver una tabla con las dos filas que acabás de insertar.
  
 ---
  
@@ -175,7 +175,9 @@ SELECT * FROM alumnos;
 ```sql
 exit
 ```
- 
+
+Luego apretamos ctrl + d para salir del contenedor
+
 **b) Detener el contenedor** cuando termines de trabajar:
  
 ```bash
